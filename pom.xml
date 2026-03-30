@@ -27,6 +27,7 @@
         <spring-jms.version>4.3.3.RELEASE</spring-jms.version>
         <firebase-admin.version>9.1.1</firebase-admin.version>
         <jsoup.version>1.10.2</jsoup.version>
+        <h2.version>2.3.232</h2.version>
     </properties>
 
     <licenses>
@@ -130,6 +131,11 @@
                 <groupId>org.jsoup</groupId>
                 <artifactId>jsoup</artifactId>
                 <version>${jsoup.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
