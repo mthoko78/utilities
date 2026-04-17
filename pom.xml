@@ -10,24 +10,25 @@
     <url>https://github.com/mthoko78/utilities</url>
 
     <properties>
+        <commons-net.version>3.9.0</commons-net.version>
+        <firebase-admin.version>9.1.1</firebase-admin.version>
+        <h2.version>2.3.232</h2.version>
         <java.version>21</java.version>
-        <oracle.jdbc.version>19.26.0.0</oracle.jdbc.version>
-        <spring-cloud-dependencies.version>2024.0.1</spring-cloud-dependencies.version>
-        <spring-cloud-config-server.version>4.2.1</spring-cloud-config-server.version>
+        <jackson-dataformat-xml.version>2.19.1</jackson-dataformat-xml.version>
+        <javax.mail.version>1.6.2</javax.mail.version>
+        <jsoup.version>1.10.2</jsoup.version>
         <mapstruct.version>1.6.0</mapstruct.version>
         <mq-jms-spring-boot-starter.version>3.3.3</mq-jms-spring-boot-starter.version>
+        <mssql-jdbc.version>13.2.1.jre11</mssql-jdbc.version>
+        <oracle.jdbc.version>19.26.0.0</oracle.jdbc.version>
+        <springdoc-openapi-starter-webmvc-ui.version>2.8.9</springdoc-openapi-starter-webmvc-ui.version>
+        <spring-boot-admin-starter.version>3.1.5</spring-boot-admin-starter.version>
+        <spring-cloud-dependencies.version>2024.0.1</spring-cloud-dependencies.version>
+        <spring-cloud-config-server.version>4.2.1</spring-cloud-config-server.version>
+        <spring-jms.version>4.3.3.RELEASE</spring-jms.version>
+        <wiremock-testcontainers-module.version>1.0-alpha-15</wiremock-testcontainers-module.version>
         <xdb.version>19.27.0.0</xdb.version>
         <xmlparserv2.version>19.27.0.0</xmlparserv2.version>
-        <jackson-dataformat-xml.version>2.19.1</jackson-dataformat-xml.version>
-        <springdoc-openapi-starter-webmvc-ui.version>2.8.9</springdoc-openapi-starter-webmvc-ui.version>
-        <wiremock-testcontainers-module.version>1.0-alpha-15</wiremock-testcontainers-module.version>
-        <mssql-jdbc.version>13.2.1.jre11</mssql-jdbc.version>
-        <javax.mail.version>1.6.2</javax.mail.version>
-        <commons-net.version>3.9.0</commons-net.version>
-        <spring-jms.version>4.3.3.RELEASE</spring-jms.version>
-        <firebase-admin.version>9.1.1</firebase-admin.version>
-        <jsoup.version>1.10.2</jsoup.version>
-        <h2.version>2.3.232</h2.version>
     </properties>
 
     <licenses>
@@ -136,6 +137,16 @@
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>${h2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${spring-boot-admin-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring-boot-admin-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
